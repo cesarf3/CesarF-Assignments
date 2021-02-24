@@ -59,7 +59,39 @@ public class PuzzleJava {
         return alphabet;
     }
     //Generate and return an array with 10 random numbers between 55-100.
-    public randomNums(){
-        
+    public ArrayList<Integer> randomNums(){
+        Random r = new Random();
+        ArrayList<Integer> arr = new ArrayList<Integer>();
+        ArrayList<Integer> newArr = new ArrayList<Integer>();
+        for (int i = 55; i <= 100; i++){
+            arr.add(i);
+        }
+        for (int i = 0; i < 10; i++){
+            int randomNum = r.nextInt(45);
+            newArr.add(arr.get(randomNum));
+        }
+        return newArr;
     }
+    //Generate and return an array with 10 random numbers between 55-100 and have it be sorted (showing the smallest number in the beginning). Display all the numbers in the array. Next, display the minimum value in the array as well as the maximum value.
+    public ArrayList<Integer> sortRandomNums(){
+        Random r = new Random();
+        ArrayList<Integer> arr = new ArrayList<Integer>();
+        ArrayList<Integer> newArr = new ArrayList<Integer>();
+        for (int i = 55; i <= 100; i++){
+            arr.add(i);
+        }
+        for (int i = 0; i < 10; i++){
+            int randomNum = r.nextInt(45);
+            newArr.add(arr.get(randomNum));
+        }
+        Collections.sort(newArr);
+        System.out.println(newArr);
+        int min = newArr.get(0);
+        int max = newArr.get(9);
+        System.out.println("The minimum value is: " + min);
+        System.out.println("The maximum value is: " + max);
+        return newArr;
+    } 
+    //Create a random string that is 5 characters long.
+    
 }

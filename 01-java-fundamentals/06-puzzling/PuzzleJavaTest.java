@@ -17,6 +17,14 @@ public class PuzzleJavaTest {
         ArrayList<Character> arr2 = main.getAlphabet();
         System.out.println(arr2);
         //Generate and return an array with 10 random numbers between 55-100.
+        ArrayList<Integer> arr3 = main.randomNums();
+        System.out.println(arr3);
+        //Generate and return an array with 10 random numbers between 55-100 and have it be sorted (showing the smallest number in the beginning). Display all the numbers in the array. Next, display the minimum value in the array as well as the maximum value.
+        ArrayList<Integer> arr4 = main.sortRandomNums();
+        System.out.println(arr4);
+        //Create a random string that is 5 characters long.
+        ArrayList<Integer> arr5 = main.randomString();
+        System.out.println(arr5);
         
     }
 }
