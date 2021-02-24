@@ -98,17 +98,36 @@ public class PuzzleJava {
         Random r = new Random();
         //create the alphabet array
         ArrayList<Character> alphabet = new ArrayList<Character>();
-        for (char i = 'a'; i <= 'z'; i++){
+        for (char i = 'A'; i <= 'Z'; i++){
             alphabet.add(i);
         }
         //create a string of five characters
-        Character [] FiveCharacterArray = new Character [5];
-        for (int i = 0; i < 5; i++){
+        char [] FiveCharacterArray = new char [5];
+        for (int i = 0; i < 5; ++i){
             int randonNum = r.nextInt(26);
             FiveCharacterArray[i] = alphabet.get(randonNum);
         }
-        System.out.println(Arrays.toString(FiveCharacterArray));
+        System.out.println(FiveCharacterArray);
     }
     //Generate an array with 10 random strings that are each 5 characters long
-
+    public void random10Strings(){
+        //call the random method
+        Random r = new Random();
+        //create the alphabet array
+        ArrayList<Character> alphabet = new ArrayList<Character>();
+        for (char i = 'A'; i <= 'Z'; i++){
+            alphabet.add(i);
+        }
+        //create a new array of 10
+        String [] arr10 = new String[10];
+        for (int j = 0; j < 10; j++){
+            char [] FiveCharacterArray = new char[5];
+            for (int i = 0; i < 5; ++i){
+                int randonNum = r.nextInt(26);
+                FiveCharacterArray[i] = alphabet.get(randonNum);
+            }
+            arr10[j] = String.valueOf(FiveCharacterArray);
+        }
+        System.out.println(Arrays.toString(arr10));
+    }
 }

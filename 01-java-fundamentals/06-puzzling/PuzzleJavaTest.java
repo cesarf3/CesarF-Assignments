@@ -25,6 +25,6 @@ public class PuzzleJavaTest {
         //Create a random string that is 5 characters long.
         main.randomString();
         //Generate an array with 10 random strings that are each 5 characters long
-
+        main.random10Strings();
     }
 }
