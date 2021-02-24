@@ -10,9 +10,13 @@ public class PuzzleJavaTest {
         //Create an array with the following values: 3,5,1,2,7,9,8,13,25,32. Print the sum of all numbers in the array. Also have the function return an array that only includes numbers that are greater than 10 (e.g. when you pass the array above, it should return an array with the values of 13,25,32)
         ArrayList<Integer> arr = main.printSum();
         System.out.println(arr);
-
         //Create an array with the following values: Nancy, Jinichi, Fujibayashi, Momochi, Ishikawa. Shuffle the array and print the name of each person. Have the method also return an array with names that are longer than 5 characters.
         String [] array = {"Nancy", "Jinichi", "Fujibayashi", "Momochi", "Ishikawa"};
         System.out.println(main.shuffle(array));
+        //Create an array that contains all 26 letters of the alphabet (this array must have 26 values). Shuffle the array and, after shuffling, display the last letter from the array. Have it also display the first letter of the array. If the first letter in the array is a vowel, have it display a message.
+        ArrayList<Character> arr2 = main.getAlphabet();
+        System.out.println(arr2);
+        //Generate and return an array with 10 random numbers between 55-100.
+        
     }
 }

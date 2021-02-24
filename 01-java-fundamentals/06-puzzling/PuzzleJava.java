@@ -32,4 +32,34 @@ public class PuzzleJava {
         System.out.println(firstArray);
         return newArray;
     }
+    //Create an array that contains all 26 letters of the alphabet (this array must have 26 values). Shuffle the array and, after shuffling, display the last letter from the array. Have it also display the first letter of the array. If the first letter in the array is a vowel, have it display a message.
+    public ArrayList<Character> getAlphabet(){
+        ArrayList<Character> alphabet = new ArrayList<Character>();
+        for (char i = 'a'; i <= 'z'; i++){
+            alphabet.add(i);
+        }
+        Collections.shuffle(alphabet);
+        System.out.println("Last letter is: " + alphabet.get(25));
+        System.out.println("First letter is: " + alphabet.get(0));
+        if (alphabet.get(0) == 'a'){
+            System.out.println("The first letter is a vowel!");
+        }
+        else if (alphabet.get(0) == 'e'){
+            System.out.println("The first letter is a vowel!");
+        }
+        else if (alphabet.get(0) == 'i'){
+            System.out.println("The first letter is a vowel!");
+        }
+        else if (alphabet.get(0) == 'o'){
+            System.out.println("The first letter is a vowel!");
+        }
+        else if (alphabet.get(0) == 'u'){
+            System.out.println("The first letter is a vowel!");
+        }
+        return alphabet;
+    }
+    //Generate and return an array with 10 random numbers between 55-100.
+    public randomNums(){
+        
+    }
 }
