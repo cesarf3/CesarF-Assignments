@@ -23,8 +23,8 @@ public class PuzzleJavaTest {
         ArrayList<Integer> arr4 = main.sortRandomNums();
         System.out.println(arr4);
         //Create a random string that is 5 characters long.
-        ArrayList<Integer> arr5 = main.randomString();
-        System.out.println(arr5);
-        
+        main.randomString();
+        //Generate an array with 10 random strings that are each 5 characters long
+
     }
 }

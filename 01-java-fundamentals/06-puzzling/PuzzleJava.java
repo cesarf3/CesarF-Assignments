@@ -93,5 +93,22 @@ public class PuzzleJava {
         return newArr;
     } 
     //Create a random string that is 5 characters long.
-    
+    public void randomString(){
+        //call the random method
+        Random r = new Random();
+        //create the alphabet array
+        ArrayList<Character> alphabet = new ArrayList<Character>();
+        for (char i = 'a'; i <= 'z'; i++){
+            alphabet.add(i);
+        }
+        //create a string of five characters
+        Character [] FiveCharacterArray = new Character [5];
+        for (int i = 0; i < 5; i++){
+            int randonNum = r.nextInt(26);
+            FiveCharacterArray[i] = alphabet.get(randonNum);
+        }
+        System.out.println(Arrays.toString(FiveCharacterArray));
+    }
+    //Generate an array with 10 random strings that are each 5 characters long
+
 }
