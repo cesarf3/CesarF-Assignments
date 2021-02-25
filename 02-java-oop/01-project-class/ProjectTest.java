@@ -8,5 +8,8 @@ public class ProjectTest {
         System.out.println(erasing.elevatorPitch());
         System.out.println(noDescriptionProject.elevatorPitch());
         System.out.println(demo.elevatorPitch());
+
+        Portfolio portfolio = new Portfolio();
+        
     }
 }

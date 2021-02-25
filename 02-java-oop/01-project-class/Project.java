@@ -1,11 +1,10 @@
-import java.util.ArrayList;
 public class Project {
     //attributes
     private String name;
     private String description;
-    private Double initialCost;
+    private double initialCost;
     //Constructor
-    public Project (String name, String description, Double initialCost){
+    public Project (String name, String description, double initialCost){
         this.name = name;
         this.description = description;
         this.initialCost = initialCost;
@@ -14,17 +13,17 @@ public class Project {
     public Project (){
         this.name = "John Doe";
         this.description = "Your description goes here";
-        this.initialCost = (double) 0;
+        this.initialCost = 0;
     }
     public Project (String name){
         this.name = name;
         this.description = "No description available";
-        this.initialCost = (double) 5;
+        this.initialCost = 5;
     }
     public Project (String name, String description){
         this.name = name;
         this.description = description;
-        this.initialCost = (double) 5;
+        this.initialCost = 5;
     }
     //Create an instance method called elevatorPitch that will return the name and description separated by a colon.
     public String elevatorPitch(){
@@ -50,8 +49,4 @@ public class Project {
     public void setInitialCost(Double initialCost){
         this.initialCost = initialCost;
     }
-}
-
-public class Portfolio {
-
 }
