@@ -18,7 +18,7 @@ public class Project {
     public Project (String name){
         this.name = name;
         this.description = "No description available";
-        this.initialCost = 5;
+        this.initialCost = 5; 
     }
     public Project (String name, String description){
         this.name = name;

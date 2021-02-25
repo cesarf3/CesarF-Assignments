@@ -14,7 +14,7 @@ public class Portfolio {
         for (Project project : projects) {
             cost += project.getInitialCost();
         }
-        return cost;
+        return cost; 
     }
     // Add the showPortfolio method that will print all the project elevator pitches, followed by the total cost.
     public void showPortfolio(){

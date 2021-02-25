@@ -17,6 +17,6 @@ public class ProjectTest {
         portfolio.addProject(cleaning);
         portfolio.addProject(erasing);
         
-        portfolio.showPortfolio();
+        portfolio.showPortfolio(); 
     }
 }
