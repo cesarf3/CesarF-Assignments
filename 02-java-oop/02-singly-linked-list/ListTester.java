@@ -7,8 +7,15 @@ public class ListTester {
         sll.add(5);
         sll.add(15);
         sll.add(2);
-        // sll.remove();
-        // sll.remove();
-        // sll.printValues();
+        sll.add(27);
+        sll.add(-1);
+        sll.add(-9);
+        sll.remove();
+        sll.remove();
+        sll.printValues();
+
+        sll.find(3);
+        sll.removeAt(1);
+        sll.printValues();
     }
 }
